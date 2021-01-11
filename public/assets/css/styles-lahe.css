@@ -1,0 +1,9 @@
+.btn-login-ingenia {
+    background-color: #305c95;
+    border-color: #305c95;
+    color: #fff;
+}
+.btn-login-ingenia:hover, .btn-login-ingenia:focus, .btn-login-ingenia:active, .btn-login-ingenia.active {
+    background-color: #005A9B;
+    color: #fff;
+}

@@ -1,0 +1,271 @@
+
+
+@font-face {
+    font-family: AvenirNextCondensed;
+    src: url('../font/AvenirNextCondensed-Regular.ttf');
+}
+body {
+    font-family: 'AvenirNextCondensed';
+}
+.btn, .profile .user-info-left h2, .profile h3, .activity h3, .settings h3, .widget .widget-header h3 {
+    font-family: 'AvenirNextCondensed';
+}
+h2, h3 {
+    font-family: 'AvenirNextCondensed';
+}
+.logo-img {
+    width: 40%;
+    padding-bottom: 5px;
+}
+.top-bar-right {
+    padding-top: 15px;
+    font-size: 16px;
+}
+.foto-perfil {
+    width: 26px;
+    height: 26px;
+}
+.row_selected td {
+    background-color: #dbdbdb !important;
+}
+select.form-control {
+    background-color: white;
+}
+label.error {
+    color: red;
+}
+.wizard {
+    background-color: transparent;
+}
+.right {
+    text-align: right;
+}
+.float-right {
+    float: right;
+}
+.center {
+    text-align: center;
+}
+.font-color-ingenia {
+    color: #69be28;
+}
+.background-color-ingenia {
+    /*background-color: #2dc997;*/
+    background-color: #69be28;
+}
+.no-border {
+    border: none;
+}
+.modal-header {
+    background-color: #7c7c7c;
+    color: white;
+}
+.modal-title {
+    font-weight: bold;
+}
+.modal-header button {
+    color: white;
+    font-weight: bold;
+    opacity: 1;
+}
+.modal-dialog {
+    width: 700px;
+}
+.modal-body .data-name {
+    width: 14em;
+}
+.btnGris, .cancelBtn {
+    background-color: #7c7c7c !important;
+    color: #fff;
+}
+.btnGris:hover {
+    background-color: #000;
+    color: #fff;
+}
+.applyBtn {
+    background-color: black !important;
+    border-color: black !important;
+}
+.cancelBtn, .applyBtn {
+    font-weight: 100 !important;
+}
+.ancho8 {
+    width: 8em !important;
+}
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
+    background-color: #000;
+    border-color: #000;
+}
+.pagination>li>a, .pagination>li>span {
+    color: #000;
+}
+/**
+ * Estilos para el Loading...
+ */
+
+#loading_overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+#loading_overlay .loading_message {
+    background: #fff;
+    padding: 0;
+    line-height: 25px;
+    height: 30px;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 150px;
+    margin-left: -76px;
+    text-align: center;
+    color: #333;
+    font-weight: 700;
+}
+.form-control-label, .main-header h2, .main-header em, .widget-header h3, .widget-header em, .donut-label, .data-name {
+    text-transform: capitalize;
+}
+.label-text-warning {
+    color: #F56421;
+}
+.label-text-success {
+    color: #5cb85c;
+}
+.label-text-info {
+    color: #5bc0de;
+}
+.label-text-danger {
+    color: #d9534f;
+}
+.margin-right-10 {
+    margin-right: 10px;
+}
+.table>thead>tr {
+    font-size: 13px;
+    /*background-color: #0f99d6;*/
+    background-color: #7c7c7c;
+    color: white;
+}
+#asistentes>thead>tr {
+    background-color: #00B9E4;
+}
+#imposibilidad>thead>tr {
+    background-color: #7D5CC6;
+}
+#findesemana>thead>tr {
+    background-color: #69BE28;
+}
+#text_filtros em {
+    color: #bbbbbb;
+}
+/*.dataTables_wrapper{
+    display: table-caption;
+}*/
+
+@media only screen and (min-width: 600px) {
+    .top-bar .logo {
+        text-align: center;
+    }
+    .top-bar .logo img {
+        width: 15% !important;
+    }
+    .modal-dialog {
+        width: 90%;
+    }
+    #areaTablaPagos table {
+        width: 100%;
+    }
+    #areaTablaPagos table tr {
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .top-bar .logo {
+        text-align: center;
+    }
+    .top-bar .logo img {
+        width: 15% !important;
+    }
+    .modal-dialog {
+        width: 90%;
+    }
+    #areaTablaPagos table {
+        width: 100%;
+    }
+    #areaTablaPagos table tr {
+        font-size: 10px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .top-bar .logo {
+        text-align: left;
+    }
+    .top-bar .logo img {
+        width: 40% !important;
+    }
+    .modal-dialog {
+        width: 700px;
+    }
+    #areaTablaPagos table {
+        width: 100%;
+    }
+    #areaTablaPagos table tr {
+        font-size: 13px;
+    }
+}
+/**
+ * Nuevos colores y tipografía Ingenia
+ */
+
+.top-bar {
+    background-color: #005a9b;
+}
+.footer {
+    background-color: #005a9b;
+}
+.btn-danger {
+    background-color: #ff6d42;
+    border-color: #ff6d42;
+}
+.btn-warning {
+    background-color: #fdc82f;
+    border-color: #fdc82f;
+}
+.btn-default {
+    background-color: #7d5cc6;
+    border-color: #7d5cc6;
+}
+.btn-primary {
+    background-color: #00b9e4;
+    border-color: #00b9e4;
+}
+.btn-success {
+    background-color: #69be28;
+    border-color: #69be28;
+}
+/*@font-face {
+    font-family: GoboldThin;
+    src: url('../font/Gobold Thin.otf');
+}*/
+
+.main-header h2, .main-header em, h4, .page-login h2 {
+    font-family: 'GoboldThin';
+}
+.padding-left-60 {
+    padding-left: 60px !important;
+}
+.padding-left-100 {
+    padding-left: 100px !important;
+}
+.margin-top-20 {
+    margin-top: 20px;
+}
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}

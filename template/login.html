@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html  lang="es">
+    <head>
+        <title>
+            Login | Test
+        </title>
+        <meta charset="utf-8">
+            <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+                <meta content="Intenia - Sistema de Gestion de Sessiontes Virtuales" name="description">
+                    <meta content="Grupo Lahe" name="author">
+                        <!-- CSS -->
+                         <link rel="stylesheet" type="text/css" href="./public/css/toastr.min.css">
+         
+                         <link href="./public/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+                            <link href="./public/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+                                <link href="./public/assets/css/main.css" rel="stylesheet" type="text/css">
+                                <link href="./public/assets/css/styles-lahe.css" rel="stylesheet" type="text/css">
+                       
+                                    <!-- Fav and touch icons -->
+                                    <!--<link href="./public/assets/ico/favicon.png" rel="apple-touch-icon-precomposed" sizes="144x144">
+                                        <link href="./public/assets/ico/favicon.png" rel="apple-touch-icon-precomposed" sizes="114x114">
+                                            <link href="./public/assets/ico/favicon.png" rel="apple-touch-icon-precomposed" sizes="72x72">
+                                                <link href="./public/assets/ico/favicon.png" rel="apple-touch-icon-precomposed" sizes="57x57">
+                                                    <link href="./public/assets/ico/favicon.png" rel="shortcut icon">-->
+                                                    <link rel="stylesheet" href="./public/css/toastr.min.css">
+                                                    </link>
+                                                </link>
+                                            </link>
+                                        </link>
+                                    </link>
+                                </link>
+                            </link>
+                        </link>
+                    </meta>
+                </meta>
+            </meta>
+        </meta>
+   
+    </head>
+    <body>
+        <div class="wrapper full-page-wrapper page-auth page-login text-center">
+            <div class="inner-page">
+                <div class="logo">
+                   <h1>Test </h1>
+                </div>
+
+
+               <div class="login-box center-block">
+                  
+                <!---------------Inicio Sesion -------------->
+             <div id="inicioSession" style="display: block;">
+                <form class="form-horizontal" role="form" id="formLogin" name="formLogin">
+                    <p class="title">
+                        Iniciar sesión
+                    </p>
+                    <div class="form-group">
+                        <label class="control-label sr-only" for="usuario">
+                            Email
+                        </label>
+                        <div class="col-sm-12">
+                            <div class="input-group">
+                                <input class="form-control validateInput InputMinusculas" id="username" name="username" placeholder="Email" type="text" style="text-transform: lowercase;">
+                                    <span class="input-group-addon">
+                                        <i class="fa fa-user">
+                                        </i>
+                                    </span>
+                                </input>
+                            </div>
+                        </div>
+                    </div>
+                    <label class="control-label sr-only" for="password">
+                        Contraseña
+                    </label>
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <div class="input-group">
+                                <input class="form-control validateInput" id="password" name="password" placeholder="contraseña" type="password">
+                              
+                                    <span class="input-group-addon">
+                                        <i class="fa fa-lock">
+                                        </i>
+                                    </span>
+                                </input>
+                            </div>
+                        </div>
+                    </div>
+                     
+                
+                               
+                                    
+                    <button type="button" class="btn btn-info btn-lg btn-block btn-auth" id="btnIniciarSession" name="btnIniciarSession" >
+                        <i class="fa fa-arrow-circle-o-right">
+                        </i>
+                        Iniciar Sesión
+                    </button>
+        
+                 
+                    <button type="button" class="btn btn-success btn-lg btn-block btn-auth" id="create" name="create" >
+                        <i class="fa fa-arrow-circle-o-right">
+                        </i>
+                        Crear Cuenta
+                    </button>
+
+
+                </form>
+                
+             </div>
+                
+
+           
+                  <!---------------crear Cuenta -------------->
+                  <div id="crearRegistro" style="display: none;"> 
+                   <form class="form-horizontal" role="form" id="formLogin" name="formLogin">
+                        <p class="title">
+                             Crear Cuenta 
+                        </p>
+
+                        <div class="form-group">
+                           
+                            <div class="col-sm-12">
+                                <div class="input-group">
+                                    <input class="form-control  InputMinusculas" id="email_new" name="email_new" placeholder="Email" type="text" style="text-transform: lowercase;">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-user">
+                                            </i>
+                                        </span>
+                                    </input>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="form-group">
+                           
+                            <div class="col-sm-12">
+                                <div class="input-group">
+                                    <input class="form-control  InputMinusculas" id="nombre" name="nombre" placeholder="Nombre" type="text" style="text-transform: lowercase;">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-user">
+                                            </i>
+                                        </span>
+                                    </input>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="form-group">
+                         
+                            <div class="col-sm-12">
+                                <div class="input-group">
+                                    <input class="form-control " id="apellido_paterno" name="apellido_paterno" placeholder="Apellido Paterno" type="text">
+                                  
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-lock">
+                                            </i>
+                                        </span>
+                                    </input>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <div class="input-group">
+                                    <input class="form-control " id="apellido_materno" name="apellido_materno" placeholder="Apellido Materno" type="text">
+                                  
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-lock">
+                                            </i>
+                                        </span>
+                                    </input>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <div class="input-group">
+                                    <input class="form-control " id="password_new" name="password_new" placeholder="Contraseña" type="password">
+                                  
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-lock">
+                                            </i>
+                                        </span>
+                                    </input>
+                                </div>
+                            </div>
+                        </div>
+                         
+                    
+                                   
+                                        
+                        <button type="button" class="btn btn-info btn-lg btn-block btn-auth" id="btnCrearCuenta" name="btnCrearCuenta" >
+                            <i class="fa fa-arrow-circle-o-right">
+                            </i>
+                            Crear Cuenta
+                        </button>
+
+
+                        <button type="button" class="btn btn-success btn-lg btn-block btn-auth" id="registerSession" name="registerSession" >
+                            <i class="fa fa-arrow-circle-o-right">
+                            </i>
+                           Volver
+                        </button>
+            
+                         
+
+
+                    </form>
+
+                </div> 
+   
+
+               
+                
+                </div>
+             
+                
+                
+            
+                 
+            </div>
+        </div>
+        <footer class="footer">
+            Examen  2021
+        </footer>
+        <!-- Javascript -->
+        <script src="./public/assets/js/jquery/jquery-2.1.0.min.js">
+        </script>
+        <script src="./public/assets/js/bootstrap/bootstrap.min.js">
+        </script>
+        <script src="./public/assets/js/plugins/modernizr/modernizr.js">
+        </script>
+        </script>
+         <script src="./public/js/loginUser/userLogin.js">
+
+        </script>
+        <script src="./public/js/toastr.min.js"></script>
+       
+         
+    <script src="./public/js/toastr.js"></script>
+
+      <script src="./public/js/user_session.js">  </script>
+
+    </body>
+</html>
+
